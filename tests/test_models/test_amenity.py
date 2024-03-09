@@ -11,9 +11,11 @@ import unittest
 from models.amenity import Amenity
 
 
-class TestBaseModel(unittest.TestCase):
+class TestAmenity(unittest.TestCase):
     """
-    Test cases for
+    TestAmenity Class:
+
+    Contains Test cases for
     the Amenity class
     in the models module.
     """
@@ -27,9 +29,9 @@ class TestBaseModel(unittest.TestCase):
         A1.name = "Comfort"
         self.assertEqual(A1.name, "Comfort")
 
-    def test_Attr_Unique(self):
+    def test_Attr_Unique_Amenity(self):
         """
-        Test attribute assignments and retrieval.
+        Test If ID is Unique
         """
         A1 = Amenity()
         A2 = Amenity()

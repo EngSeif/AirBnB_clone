@@ -2,7 +2,7 @@
 """
     This Module Is To Make
     All Possible Test Cases
-    For Amenity Class In
+    For BaseModel Class In
     Modules Class
 """
 
@@ -14,8 +14,10 @@ from models.base_model import BaseModel
 
 class TestBaseModel(unittest.TestCase):
     """
-    Test cases for
-    the Amenity class
+    TestBaseModel Class:
+
+    Contains Test cases for
+    the Base class
     in the models module.
     """
 
