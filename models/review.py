@@ -18,7 +18,6 @@ class Review(BaseModel):
     From Base Model Class
     """
 
-    email = ""
-    password = ""
-    first_name = ""
-    last_name = ""
+    place_id = ""
+    user_id = ""
+    text = ""
