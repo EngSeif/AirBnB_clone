@@ -17,7 +17,7 @@ class TestUser(unittest.TestCase):
     the User class
     in the models module.
     """
-    def test_Initalization(self):
+    def test_Initalization_User(self):
         """
         Test attribute assignments and retrieval.
         """
@@ -43,7 +43,7 @@ class TestUser(unittest.TestCase):
         U2 = User()
         self.assertNotEqual(U1.id, U2.id)
 
-    def test_Dict_Method(self):
+    def test_Dict_Method_User(self):
         """
         Test To_Dict Method
         """
