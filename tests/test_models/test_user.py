@@ -17,16 +17,15 @@ class TestUser(unittest.TestCase):
     the User class
     in the models module.
     """
-    def Test_Initalization(self):
+    def test_Initalization(self):
         """
         Test attribute assignments and retrieval.
         """
-        U1 = User(
-            email="WooaH@Gmail.com",
-            password="HQBTQ-1547",
-            first_name="Seif",
-            last_name="Bellingham"
-            )
+        U1 = User()
+        U1.email="WooaH@Gmail.com",
+        U1.password="HQBTQ-1547",
+        U1.first_name="Seif",
+        U1.last_name="Bellingham"
         self.assertTrue(U1.email, "WooaH@Gmail.com")
         self.assertTrue(U1.password, "HQBTQ-1547")
         self.assertTrue(U1.first_name, "Seif")
@@ -36,7 +35,7 @@ class TestUser(unittest.TestCase):
         self.assertIsInstance(U1.created_at, datetime.datetime)
         self.assertIsInstance(U1.updated_at, datetime.datetime)
 
-    def Test_Unique_User(self):
+    def test_Unique_User(self):
         """
         Test If ID is Unique
         """
@@ -44,16 +43,15 @@ class TestUser(unittest.TestCase):
         U2 = User()
         self.assertNotEqual(U1.id, U2.id)
 
-    def Test_Dict_Method(self):
+    def test_Dict_Method(self):
         """
         Test To_Dict Method
         """
-        U1 = User(
-            email="WooaH@Gmail.com",
-            password="HQBTQ-1547",
-            first_name="Seif",
-            last_name="Bellingham"
-            )
+        U1 = User()
+        U1.email="WooaH@Gmail.com",
+        U1.password="HQBTQ-1547",
+        U1.first_name="Seif",
+        U1.last_name="Bellingham"
 
         Dict_U = U1.to_dict()
         self.assertIn('id', Dict_U)
