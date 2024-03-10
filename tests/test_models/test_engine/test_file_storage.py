@@ -84,3 +84,6 @@ class Test_FileStorage(unittest.TestCase):
         storage.new(B)
         with self.assertRaises(PermissionError):
             storage.save()
+
+if __name__ == '__main__':
+    unittest.main()
