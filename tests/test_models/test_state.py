@@ -25,11 +25,11 @@ class TestState(unittest.TestCase):
         S1 = State()
         self.assertEqual(S1.name, "")
         S1.name = "Berlin"
-        self.assertEqual(S1.name, "Comfort")
+        self.assertEqual(S1.name, "Berlin")
 
     def test_Attr_Unique_State(self):
         """
-        Test attribute assignments and retrieval.
+        Test If ID is Unique
         """
         S1 = State()
         S2 = State()
