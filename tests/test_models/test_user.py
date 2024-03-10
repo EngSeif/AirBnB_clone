@@ -22,6 +22,10 @@ class TestUser(unittest.TestCase):
         Test attribute assignments and retrieval.
         """
         U1 = User()
+        self.assertEqual(U1.email, "")
+        self.assertEqual(U1.password, "")
+        self.assertEqual(U1.first_name, "")
+        self.assertEqual(U1.last_name, "")
         U1.email = "WooaH@Gmail.com",
         U1.password = "HQBTQ-1547",
         U1.first_name = "Seif",
