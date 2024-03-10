@@ -22,10 +22,10 @@ class TestUser(unittest.TestCase):
         Test attribute assignments and retrieval.
         """
         U1 = User()
-        U1.email="WooaH@Gmail.com",
-        U1.password="HQBTQ-1547",
-        U1.first_name="Seif",
-        U1.last_name="Bellingham"
+        U1.email = "WooaH@Gmail.com",
+        U1.password = "HQBTQ-1547",
+        U1.first_name = "Seif",
+        U1.last_name = "Bellingham"
         self.assertTrue(U1.email, "WooaH@Gmail.com")
         self.assertTrue(U1.password, "HQBTQ-1547")
         self.assertTrue(U1.first_name, "Seif")
@@ -48,10 +48,10 @@ class TestUser(unittest.TestCase):
         Test To_Dict Method
         """
         U1 = User()
-        U1.email="WooaH@Gmail.com",
-        U1.password="HQBTQ-1547",
-        U1.first_name="Seif",
-        U1.last_name="Bellingham"
+        U1.email = "WooaH@Gmail.com",
+        U1.password = "HQBTQ-1547",
+        U1.first_name = "Seif",
+        U1.last_name = "Bellingham"
 
         Dict_U = U1.to_dict()
         self.assertIn('id', Dict_U)
