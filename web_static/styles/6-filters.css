@@ -104,4 +104,6 @@ div.locations:hover .popover,
 div.amenities:hover .popover
 {
     display: block;
+    position: absolute;
+    z-index: 1;
 }
